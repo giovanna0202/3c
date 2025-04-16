@@ -12,6 +12,20 @@
 </head>
 
 <body>
+    <button onclick="changeFontSize('aumentar')">Aumentar</button>
+<button onclick="changeFontSize('reduzir')">Reduzir</button><script>
+function changeFontSize(action){
+const elements = ['h2', 'p'];
+elements.map(element=>{
+
+const selector = document.querySelector(element);
+let value = getComputedStyle(selector).getPropertyValue('font-size');
+value = value.replace('px', '');
+value = action === 'aumentar' ? parseInt(value) + 1 : parseInt(value) - 1;
+selector.style.fontSize = `${value}px`;
+})
+}
+</script>
     <header class=" p-5">
 
         <nav class="container d-flex justify-content-between align-items-center" >
