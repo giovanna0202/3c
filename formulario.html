@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Avaliação</h1>
+    <form action="#" method="post">
+        
+        <label for="pergunta1">1. Como você avalia a qualidade geral do evento/curso?</label><br>
+        <input type="radio" id="excelente" name="pergunta1" value="excelente"> Excelente<br>
+        <input type="radio" id="bom" name="pergunta1" value="bom"> Bom<br>
+        <input type="radio" id="regular" name="pergunta1" value="regular"> Regular<br>
+        <input type="radio" id="ruim" name="pergunta1" value="ruim"> Ruim<br><br>
+
+        <label for="pergunta2">2. A duração do evento/curso foi adequada?</label><br>
+        <input type="radio" id="adequada" name="pergunta2" value="adequada"> Sim<br>
+        <input type="radio" id="demasiado_longa" name="pergunta2" value="demasiado_longa"> Excessivamente longa<br>
+        <input type="radio" id="curta" name="pergunta2" value="curta"> Curta<br><br>
+
+        <label for="pergunta3">3. Como você avalia a clareza do conteúdo apresentado?</label><br>
+        <input type="radio" id="muito_clara" name="pergunta3" value="muito_clara"> Muito clara<br>
+        <input type="radio" id="clara" name="pergunta3" value="clara"> Clara<br>
+        <input type="radio" id="dificil_de_entender" name="pergunta3" value="dificil_de_entender"> Difícil de entender<br><br>
+
+        <label for="pergunta4">4. O material de apoio foi útil?</label><br>
+        <input type="radio" id="sim" name="pergunta4" value="sim"> Sim<br>
+        <input type="radio" id="nao" name="pergunta4" value="nao"> Não<br><br>
+
+        <label for="pergunta5">5. Como você avalia a interação com os facilitadores/organizadores?</label><br>
+        <input type="radio" id="excelente_interacao" name="pergunta5" value="excelente"> Excelente<br>
+        <input type="radio" id="boa_interacao" name="pergunta5" value="boa"> Boa<br>
+        <input type="radio" id="ruim_interacao" name="pergunta5" value="ruim"> Ruim<br><br>
+
+        <label for="comentarios">6. Quais são os pontos positivos dessa experiência?</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea><br><br>
+
+        <label for="sugestoes">7. Quais sugestões você daria para melhorar?</label><br>
+        <textarea id="sugestoes" name="sugestoes" rows="4"></textarea><br><br>
+
+        <label for="recomendaria">8. Você recomendaria essa experiência para outras pessoas?</label><br>
+        <input type="radio" id="sim_recomendaria" name="recomendaria" value="sim"> Sim<br>
+        <input type="radio" id="talvez_recomendaria" name="recomendaria" value="talvez"> Talvez<br>
+        <input type="radio" id="nao_recomendaria" name="recomendaria" value="nao"> Não<br><br>
+
+        <button type="submit" class="button">Enviar Avaliação</button>
+    </form>
+
+</body>
+</html>
