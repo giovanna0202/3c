@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tela de login</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg,rgb(245, 8, 166),rgb(153, 10, 236)) ;
-        }
-        div{ background-color: rgba(0, 0, 0, 0.9);
-            position:absolute;
-            top: 50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            padding:80px;
-            border-radius: 15px;
-            color:white;
-        }
-        input{
-            padding:15px;
-            border:none;
-            outline: none;
-            font-size: 15px;
-        }
-        button{
-            background-color: dodgerblue;
-            border:none;
-            padding:15px;
-            width:100%;
-            border-radius: 10px;
-            color:white;
-            font-size: 15px;
-           
-        }
-        button:hover{
-            background-color: rgb(104, 200, 255);
-             cursor:pointer;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cultura do Campo: Desafios e Soluções</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div >
-    <h1>Login</h1>
-    <input type="text" placeholder="Nome">
-    <Br> <Br>
-     <input type="passawrd" placeholder="Senha" >
-     <Br> <Br>
-        <a href="coraline.html"><button>Enviar</button></a>
-</div>
+
+  <header>
+    <h1>Cultura do Campo</h1>
+    <p>Vivências, desafios e caminhos para o futuro</p>
+  </header>
+
+  <nav>
+    <a href="#cultura">Cultura</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#referencias">Referências</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="cultura" class="section">
+      <h2>Cultura do Campo</h2>
+      <p>
+        O campo brasileiro é um espaço de diversidade cultural, com tradições que incluem festas juninas, danças típicas, culinária caseira, rezas e ofícios manuais. Os saberes passados entre gerações valorizam o cuidado com a terra e a produção artesanal, promovendo uma vida mais simples, mas profundamente conectada com a natureza.
+      </p>
+      <img src="img/cultura.jpg" alt="Cultura do campo" class="img-section">
+    </section>
+
+    <section id="desafios" class="section">
+      <h2>Desafios no Campo</h2>
+      <ul>
+        <li>Falta de acesso à internet e educação tecnológica</li>
+        <li>Dificuldade de transporte e escoamento da produção</li>
+        <li>Êxodo rural e envelhecimento da população</li>
+        <li>Uso excessivo de agrotóxicos e degradação do solo</li>
+      </ul>
+      <img src="img/desafios.jpg" alt="Desafios rurais" class="img-section">
+    </section>
+
+    <section id="solucoes" class="section">
+      <h2>Soluções Possíveis</h2>
+      <ul>
+        <li>Implantação de internet rural e capacitação digital</li>
+        <li>Melhoria da infraestrutura de estradas e pontes</li>
+        <li>Programas de incentivo aos jovens no campo (como o SENAR)</li>
+        <li>Adoção de práticas sustentáveis como agroecologia e reflorestamento</li>
+      </ul>
+      <img src="img/solucoes.jpg" alt="Soluções sustentáveis" class="img-section">
+    </section>
+
+    <section id="referencias" class="section">
+      <h2>Referências</h2>
+      <ul>
+        <li><a href="https://www.sistemafaep.org.br/agrinho/" target="_blank">Sistema FAEP – Programa Agrinho</a></li>
+        <li><a href="https://educacao.senarnacional.org.br/" target="_blank">SENAR – Serviço Nacional de Aprendizagem Rural</a></li>
+        <li><a href="https://www.brasilescola.uol.com.br/geografia/espaco-rural.htm" target="_blank">Brasil Escola – Espaço Rural</a></li>
+        <li><a href="https://unsplash.com/" target="_blank">Unsplash – Banco de imagens gratuitas</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cultura do Campo. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
